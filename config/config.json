@@ -1,0 +1,15 @@
+{
+    "api": {
+      "dhis2": {
+        "url": "http://172.16.110.2:8084",
+        "user": {
+          "name": "admin",
+          "pwd": "district"
+        }
+      }
+    },
+  
+    "register": true,
+    "verbose" :true,
+    "heartbeat": true
+  }
