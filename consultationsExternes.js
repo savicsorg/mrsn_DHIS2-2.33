@@ -1,10 +1,11 @@
 // POST DHIS2 information 
 var request = require('request');
+var myConfig = require('./config/config');
 
 
-var postApiUrl= 'http://172.16.110.2:8084/api/dataValueSets';
-var username = 'admin';
-var password = 'district';
+var postApiUrl= myConfig.api.dhis2.url + '/api/dataValueSets';
+var username = myConfig.api.dhis2.user.name;
+var password = myConfig.api.dhis2.user.pwd;
 var auth = "Basic " + new Buffer(username + ":" + password).toString("base64");
 var orgUnit = "sKIaHUZzcOx"; //HD Gaya  ** replace by "hLGXSxm940X"for HD Gothèye **
 var date = "2020-12-14";
