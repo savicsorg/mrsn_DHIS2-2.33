@@ -1,6 +1,7 @@
 // POST DHIS2 information 
 var request = require('request');
 
+
 var postApiUrl= 'http://172.16.110.2:8084/api/dataValueSets';
 var username = 'admin';
 var password = 'district';
@@ -11,7 +12,7 @@ var period = "202012";
 var options = {
 	method: 'POST',
 	url: postApiUrl,
-	body: JSON.stringify(jsonPayload),	
+	body: JSON.stringify(jsonPayloadToConsultationExterne),	
 	headers: { 	
 		'Authorization': auth,
 		'Accept': 'application/json',
@@ -22,7 +23,7 @@ var options = {
 	}
 }; 
 
-var jsonPayload = {
+var jsonPayloadToConsultationExterne = {
   "dataSet": "G5MHmZM6SfM", // Consultation Externe
   "completeDate": date,
   "period": period,
