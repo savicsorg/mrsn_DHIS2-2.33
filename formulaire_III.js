@@ -8,7 +8,7 @@ var auth = "Basic " + new Buffer(username + ":" + password).toString("base64");
 var orgUnit = "sKIaHUZzcOx"; //HD Gaya  ** replace by "hLGXSxm940X"for HD Gothèye **
 var date = "2021-02-04";
 var period = "202012";
-var jsonPayloadToConsultationExterne = {
+var jsonPayloadToServiceUrgences = {
     "dataSet": "nd8Njom3T68", // Service des Urgences
     "completeDate": date,
     "period": period,
@@ -141,7 +141,7 @@ var jsonPayloadToConsultationExterne = {
 var options = {
 	method: 'POST',
 	url: postApiUrl,
-	body: JSON.stringify(jsonPayloadToConsultationExterne),	
+	body: JSON.stringify(jsonPayloadToServiceUrgences),	
 	headers: { 	
 		'Authorization': auth,
 		'Accept': 'application/json',

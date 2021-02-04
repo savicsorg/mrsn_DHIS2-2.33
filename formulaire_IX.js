@@ -7,7 +7,7 @@ var auth = "Basic " + new Buffer(username + ":" + password).toString("base64");
 var orgUnit = "sKIaHUZzcOx"; //HD Gaya  ** replace by "hLGXSxm940X"for HD Gothèye **
 var date = "2020-02-03";
 var period = "202012";
-var jsonPayloadToConsultationExterne = {
+var jsonPayloadToPlanificationFamiliale = {
   "dataSet": "zG4BbP1UUdn", // Planification Familiale
   "completeDate": date,
   "period": period,
@@ -441,7 +441,7 @@ var jsonPayloadToConsultationExterne = {
 var options = {
 	method: 'POST',
 	url: postApiUrl,
-	body: JSON.stringify(jsonPayloadToConsultationExterne),	
+	body: JSON.stringify(jsonPayloadToPlanificationFamiliale),	
 	headers: { 	
 		'Authorization': auth,
 		'Accept': 'application/json',
