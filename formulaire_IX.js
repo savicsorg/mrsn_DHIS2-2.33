@@ -5,7 +5,7 @@ var username = myConfig.api.dhis2.user.name;
 var password = myConfig.api.dhis2.user.pwd;
 var auth = "Basic " + new Buffer(username + ":" + password).toString("base64");
 var orgUnit = "sKIaHUZzcOx"; //HD Gaya  ** replace by "hLGXSxm940X"for HD Gothèye **
-var date = "2020-02-03";
+var date = "2020-02-05";
 var period = "202012";
 var jsonPayloadToPlanificationFamiliale = {
   "dataSet": "zG4BbP1UUdn", // Planification Familiale
@@ -17,32 +17,32 @@ var jsonPayloadToPlanificationFamiliale = {
   [
 	{   "dataElement": "luxs1nMVeWU", 
 		"categoryOptionCombo": "EdeF5g84qOH", 
-		"value": "10", 
+		"value": "1", 
 		"comment": ""
 	},
 	{	"dataElement": "luxs1nMVeWU", 
 		"categoryOptionCombo": "ypTYRKCIKeR", 
-		"value": "20", 
+		"value": "2", 
 		"comment": "" 
     },
     {   "dataElement": "luxs1nMVeWU", 
         "categoryOptionCombo": "bBN7EAvEMiz", 
-        "value": "10", 
+        "value": "3", 
         "comment": ""
     },
     {	"dataElement": "luxs1nMVeWU", 
         "categoryOptionCombo": "GG3DG52QqyW", 
-        "value": "20", 
+        "value": "4", 
         "comment": "" 
     },
     {	"dataElement": "luxs1nMVeWU", 
         "categoryOptionCombo": "AyfUsxA8LtJ", 
-        "value": "20", 
+        "value": "5", 
         "comment": "" 
     },
     {	"dataElement": "luxs1nMVeWU", 
         "categoryOptionCombo": "DUdSSAGnu4m", 
-        "value": "20", 
+        "value": "6", 
         "comment": "" 
     },
     {   "dataElement": "OPQPMR7Nxxx", 
