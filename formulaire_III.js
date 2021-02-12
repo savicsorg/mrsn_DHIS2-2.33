@@ -1,6 +1,5 @@
 var request = require('request');
 var myConfig = require('./config/config');
-
 var postApiUrl= myConfig.api.dhis2.url + '/api/dataValueSets';
 var username = myConfig.api.dhis2.user.name;
 var password = myConfig.api.dhis2.user.pwd;
@@ -13,7 +12,7 @@ var jsonPayloadToServiceUrgences = {
     "completeDate": date,
     "period": period,
 	"orgUnit": orgUnit,
-//	"attributeOptionCombo": "HllvX50cXC0",
+	"attributeOptionCombo": "HllvX50cXC0",
     "dataValues": [
     {   "dataElement": "cp5TSXIxrID", 
 		"categoryOptionCombo": "jpMgblQN1BO", 
