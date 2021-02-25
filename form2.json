@@ -1,88 +1,88 @@
 {
     "dataSet": "nd8Njom3T68",
-    "completeDate": "2021-02-04",
-    "period": "202011",
+    "completeDate": "",
+    "period": "",
 	"orgUnit": "sKIaHUZzcOx",
 	"attributeOptionCombo": "HllvX50cXC0",
     "dataValues": [
 	{   "dataElement": "bL8hgP9t6H9", 
 		"categoryOptionCombo": "jpMgblQN1BO", 
-		"value": "10", 
+		"value": "", 
 		"comment": ""
 	},
 	{	"dataElement": "bL8hgP9t6H9", 
 		"categoryOptionCombo": "PgqJQFyKD8E", 
-		"value": "20", 
+		"value": "", 
 		"comment": "" 
 	},
 	{ 	"dataElement": "bL8hgP9t6H9", 
 		"categoryOptionCombo": "AWg0ckSlZ9c",
-		"value": "30", 
+		"value": "", 
 		"comment": "" 
 	},
 	{ 	"dataElement": "bL8hgP9t6H9", 
 		"categoryOptionCombo": "P0wfW4JYXfK", 
-		"value": "40", 
+		"value": "", 
 		"comment": "" 
 	},
 	{ 	"dataElement": "CXa7XQjsYBj", 
 		"categoryOptionCombo": "jpMgblQN1BO", 
-		"value": "50", 
+		"value": "", 
 		"comment": "" 
 	},
 	{ 	"dataElement": "CXa7XQjsYBj", 
 		"categoryOptionCombo": "PgqJQFyKD8E", 
-		"value": "60", 
+		"value": "", 
 		"comment": "" 
 	},
 	{ 	"dataElement": "CXa7XQjsYBj", 
 		"categoryOptionCombo": "AWg0ckSlZ9c", 
-		"value": "70", 
+		"value": "", 
 		"comment": "" 
 	},
 	{ 	"dataElement": "CXa7XQjsYBj", 
 		"categoryOptionCombo": "P0wfW4JYXfK", 
-		"value": "80", 
+		"value": "", 
 		"comment": "" 
 	},
 	{ 	"dataElement": "KgrleYbF15t", 
 		"categoryOptionCombo": "jpMgblQN1BO", 
-		"value": "90", 
+		"value": "", 
 		"comment": "" 
 	},
 	{ 	"dataElement": "KgrleYbF15t", 
 		"categoryOptionCombo": "PgqJQFyKD8E", 
-		"value": "100", 
+		"value": "", 
 		"comment": "" 
 	},
 	{ 	"dataElement": "KgrleYbF15t", 
 		"categoryOptionCombo": "AWg0ckSlZ9c", 
-		"value": "110", 
+		"value": "", 
 		"comment": "" 
 	},
 	{ 	"dataElement": "KgrleYbF15t", 
 		"categoryOptionCombo": "P0wfW4JYXfK", 
-		"value": "120", 
+		"value": "", 
 		"comment": "" 
 	},
 	{ 	"dataElement": "F8ZUtq2GS1b", 
 		"categoryOptionCombo": "jpMgblQN1BO", 
-		"value": "130", 
+		"value": "", 
 		"comment": "" 
 	},
 	{ 	"dataElement": "F8ZUtq2GS1b", 
 		"categoryOptionCombo": "PgqJQFyKD8E", 
-		"value": "140", 
+		"value": "", 
 		"comment": "" 
 	},
 	{ 	"dataElement": "F8ZUtq2GS1b", 
 		"categoryOptionCombo": "AWg0ckSlZ9c", 
-		"value": "150", 
+		"value": "", 
 		"comment": "" 
 	},
 	{ 	"dataElement": "F8ZUtq2GS1b", 
 		"categoryOptionCombo": "P0wfW4JYXfK", 
-		"value": "160", 
+		"value": "", 
 		"comment": "" 
 	}
   ]

@@ -5,8 +5,8 @@ var username = myConfig.api.dhis2.user.name;
 var password = myConfig.api.dhis2.user.pwd;
 var auth = "Basic " + new Buffer.from(username + ":" + password).toString("base64");
 var orgUnit = "sKIaHUZzcOx"; //HD Gaya  ** replace by "hLGXSxm940X"for HD Gothèye **
-var date = "2021-02-03";
-var period = "202012";
+var date = "2021-02-23";
+var period = "202009";
 var jsonPayloadToConsultationExterne = {
   "dataSet": "yOM8cDdyX8m", // Consultation Externe
   "completeDate": date,
