@@ -6,8 +6,10 @@ var port = myConfig.api.server.port;
 var postApiUrl= myConfig.api.dhis2.url + '/api/dataValueSets';
 var username = myConfig.api.dhis2.user.name;
 var password = myConfig.api.dhis2.user.pwd;
-const form2 = require ('./form2.json');
-const data = require ('./raw.json');
+// const form = require ('./form2.json');
+const form = require ('./form3.json');
+// const data = require ('./raw_form2.json');
+const data = require ('./raw_form3.json')
 var auth = "Basic " + new Buffer(username + ":" + password).toString("base64");
 var mapFile = require('./mapFile');
 
@@ -18,12 +20,12 @@ var period = data.periode;
 var attributeOptionCombo = "HllvX50cXC0";
 
 var rawJsonTab = data.donnees;
-var dataValues = form2.dataValues;
-var obj = [];
+var dataValues = form.dataValues;
+// var obj = [];
 
 for(i=0; i < rawJsonTab.length; i ++) {
-  obj.push(rawJsonTab[i].champs)
-  dataValues[i].value = obj[i];
+  // obj.push(rawJsonTab[i].champs)
+  dataValues[i].value = rawJsonTab[i].champs;
  };
 
 var JSONPayLoad = {
