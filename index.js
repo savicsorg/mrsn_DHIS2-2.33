@@ -6,12 +6,10 @@ var port = myConfig.api.server.port;
 var postApiUrl= myConfig.api.dhis2.url + '/api/dataValueSets';
 var username = myConfig.api.dhis2.user.name;
 var password = myConfig.api.dhis2.user.pwd;
-// const form = require ('./form2.json');
-const form = require ('./form3.json');
-// const data = require ('./raw_form2.json');
-const data = require ('./raw_form3.json')
+const form = require ('./models/form9.json');
+const data = require ('./utils/data/raw_form9.json')
 var auth = "Basic " + new Buffer(username + ":" + password).toString("base64");
-var mapFile = require('./mapFile');
+var mapFile = require('./utils/mapFile');
 
 var orgUnit = mapFile.getOrgUnit(data.OrgUnit);
 var dataSet = mapFile.getDataSet(data.formulaire);
@@ -21,10 +19,8 @@ var attributeOptionCombo = "HllvX50cXC0";
 
 var rawJsonTab = data.donnees;
 var dataValues = form.dataValues;
-// var obj = [];
 
 for(i=0; i < rawJsonTab.length; i ++) {
-  // obj.push(rawJsonTab[i].champs)
   dataValues[i].value = rawJsonTab[i].champs;
  };
 
