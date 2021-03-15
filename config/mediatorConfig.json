@@ -1,0 +1,35 @@
+{
+    "urn": "urn:mediator:test",
+    "version": "1.0.0",
+    "name": "Mediator",
+    "description": "Test Mediator",
+    "defaultChannelConfig": [
+      {
+        "name": "Mediator",
+        "urlPattern": "^/reports$",
+        "routes": [
+          {
+            "name": "Mediator Route",
+            "host": "192.168.1.9",
+            "path": "/reports",
+            "port": "3000",
+            "primary": true,
+            "type": "http"
+          }
+        ],
+        "allow": ["admin"],
+        "methods": ["GET", "POST"],
+        "type": "http"
+      }
+    ],
+    "endpoints": [
+      {
+        "name": "Mediator Endpoint",
+        "host": "192.168.1.9",
+        "path": "/reports",
+        "port": "3000",
+        "primary": true,
+        "type": "http"
+      }
+    ]
+  }

@@ -5,6 +5,9 @@ const bodyParser = require('body-parser');
 const form = require ('./models/formsModels');
 var mapFile = require('./utils/mapFile');
 
+const utils = require('openhim-mediator-utils');
+const mediatorConfig = require('./config/mediatorConfig.json');
+var urn = mediatorConfig.urn;
 
 // Parse incoming requests data
 app.use(bodyParser.json());
@@ -23,6 +26,15 @@ var completeDate;
 var period;
 var dataValues;
 var attributeOptionCombo = "HllvX50cXC0";
+
+const openhimConfig = {
+  username: 'root@openhim.org',
+  password: 'passer',
+  apiURL: 'https://172.16.110.2:8080',
+  trustSelfSigned: true,
+  urn
+}
+
 
 app.get("/", (req, res) => {
     res.send({ message: "Welcome!" });
@@ -81,4 +93,13 @@ app.get("/", (req, res) => {
 // start the server on port 9000
 const server = app.listen(port, () => {
   console.log(`Express running → PORT ${server.address().port}`);
-})
+  utils.activateHeartbeat(openhimConfig);
+});
+
+utils.registerMediator(openhimConfig, mediatorConfig, err => {
+  if (err) {
+    throw new Error(`Failed to register mediator. Check your Config. ${err}`)
+  } else {
+    console.log("Mediator Connected");
+  }
+});
