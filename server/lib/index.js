@@ -2,11 +2,11 @@ const express = require('express');
 const app = express();
 const fetch = require('node-fetch');
 const bodyParser = require('body-parser');
-const form = require ('./models/formsModels');
-var mapFile = require('./utils/mapFile');
+const form = require ('../models/formsModels');
+var mapFile = require('./utils');
 
 const utils = require('openhim-mediator-utils');
-const mediatorConfig = require('./config/mediatorConfig.json');
+const mediatorConfig = require('../config/mediatorConfig.json');
 var urn = mediatorConfig.urn;
 
 // Parse incoming requests data
@@ -28,9 +28,9 @@ var dataValues;
 var attributeOptionCombo = "HllvX50cXC0";
 
 const openhimConfig = {
-  username: 'root@openhim.org',
-  password: 'passer',
-  apiURL: 'https://172.16.110.2:8080',
+  username: myConfig.api.username,
+  password: myConfig.api.password,
+  apiURL: myConfig.api.apiURL,
   trustSelfSigned: true,
   urn
 }
@@ -61,7 +61,6 @@ app.get("/", (req, res) => {
     res.send({
       success: 'true',
       message: 'Form '+report.formulaire+' added successfully',
-      //report
     });
 
     var JSONPayLoad = {
@@ -90,7 +89,7 @@ app.get("/", (req, res) => {
 });
 
 
-// start the server on port 9000
+// start the server on port 3000
 const server = app.listen(port, () => {
   console.log(`Express running → PORT ${server.address().port}`);
   utils.activateHeartbeat(openhimConfig);

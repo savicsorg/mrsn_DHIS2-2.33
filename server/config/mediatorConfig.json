@@ -1,16 +1,16 @@
 {
-    "urn": "urn:mediator:test",
+    "urn": "urn:mediator:OMRStoDHIS2",
     "version": "1.0.0",
-    "name": "Mediator",
-    "description": "Test Mediator",
+    "name": "OpenMRS to Dhis2 server",
+    "description": "A mediator to post OpenMRS forms to Dhis2 server",
     "defaultChannelConfig": [
       {
-        "name": "Mediator",
+        "name": "OpenMRS to Dhis2 server channel",
         "urlPattern": "^/reports$",
         "routes": [
           {
-            "name": "Mediator Route",
-            "host": "192.168.1.9",
+            "name": "OpenMRS to Dhis2 server Route",
+            "host": "127.0.0.1",
             "path": "/reports",
             "port": "3000",
             "primary": true,
@@ -25,7 +25,7 @@
     "endpoints": [
       {
         "name": "Mediator Endpoint",
-        "host": "192.168.1.9",
+        "host": "127.0.0.1",
         "path": "/reports",
         "port": "3000",
         "primary": true,
