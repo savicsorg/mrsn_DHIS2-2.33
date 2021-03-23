@@ -10,7 +10,7 @@
         "routes": [
           {
             "name": "OpenMRS to Dhis2 server Route",
-            "host": "127.0.0.1",
+            "host": "192.168.1.12",
             "path": "/reports",
             "port": "3000",
             "primary": true,
@@ -25,7 +25,7 @@
     "endpoints": [
       {
         "name": "Mediator Endpoint",
-        "host": "127.0.0.1",
+        "host": "192.168.1.12",
         "path": "/reports",
         "port": "3000",
         "primary": true,

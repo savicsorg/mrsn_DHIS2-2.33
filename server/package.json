@@ -2,16 +2,38 @@
   "name": "dhis2_exchanges",
   "version": "1.0.0",
   "description": "DHIS2 Repository for OpenMRS-Niger Project",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.13.4",
     "node-fetch": "^2.6.1",
     "openhim-mediator-utils": "^0.2.3",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "async": "^3.2.0",
+    "deasync": "^0.1.20",
+    "formidable": "1.2.1",
+    "moment": "2.22.2",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.13",
+    "mysql": "^2.18.1",
+    "needle": "^2.4.0",
+    "negotiator": "^0.6.2",
+    "underscore": "1.9.1",
+    "urijs": "^1.17.1",
+    "uuid": "^8.1.0",
+    "uuidv4": "^6.1.0",
+    "xmldom": "^0.1.22",
+    "xpath": "0.0.23"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "onchange": "^2.3.0",
+    "winston": "^2.2.0",
+    "rewire": "^2.5.1",
+    "snazzy": "^3.0.1",
+    "standard": "^6.0.8",
+    "tap": "^5.7.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
