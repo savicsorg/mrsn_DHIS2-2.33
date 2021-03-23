@@ -2,16 +2,16 @@
     "api": {
       "username": "root@openhim.org",
       "password": "passer",
-      "apiURL": "https://172.16.110.2:8080",
+      "apiURL": "https://localhost:8080",
       "trustSelfSigned": "true",
       "urlPattern": "/reports",
-      "openhimServer": "https://172.16.110.2"
+      "openhimServer": "https://localhost"
     },
     "server":{
       "port": 3000
       },
     "dhis2": {
-      "url": "http://172.16.110.2:8083",
+      "url": "http://localhost:8083",
       "user": {
         "name": "admin",
         "pwd": "district"
